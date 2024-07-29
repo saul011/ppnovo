@@ -1,0 +1,784 @@
+h1 {
+    color: rgb(167, 167, 239);
+}
+
+#principal {
+    color: rgb(97, 162, 227);
+    font-size: 100px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(42, 73, 141);
+    cursor: pointer;
+}
+
+#foto-simbolo {
+    width: 55px;
+    height: 40px;
+    margin: 0 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#Entrar {
+    background-color: rgb(42, 73, 141);
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#sobre {
+    background-color: rgb(42, 73, 141);
+    position: absolute;
+    top: 20px;
+    width: 77px;
+    height: 35px;
+    margin: 0 10px;
+    right: 110px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#icone {
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#input {
+    display: block;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(97, 162, 227);
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: gray;
+}
+
+#oi {
+    display: block;
+    background-color: black;
+    color: white;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+#simbolo{
+    width: 55px;
+    height: 40px;
+}
+              
+    
+#icone{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+
+#input{
+    display: block;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(97, 162, 227);
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: gray;
+}
+
+#entrar{
+    display: block;
+    margin: 0 10px;
+    width: 220px;
+    height: 45px;
+    background-color: rgb(97, 162, 227);
+    color: white;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: gray;
+}
+
+#novo{
+border: none;
+justify-content: center;
+margin: 0 auto;
+display: block;
+align-items: center;
+padding:  2px;
+background-color: white;
+}
+
+#login{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#foto-simbolo{
+    width: 55px;
+    height: 40px;
+}
+
+
+#inter{
+    width: 250px;
+    height: 220px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#criança{
+    display: block;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(97, 162, 227);
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: gray;
+    font-size: larger;
+}
+
+input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+.bola, .animal, .alfabeto, .comida{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#cor{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#comida{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px; 
+}
+
+#ROUPAS{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px; 
+}
+
+#formas{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#rotinas, #animal, #alfabetos, #comidas{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#objetos, #animais, #cores, #rotina, #alfabeto, #comida, #roupas, #forma, #emoçoes, #numero{
+    font-size: 30px;
+    width: 160px;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px; 
+    background-color: white;
+    border: none; 
+}
+
+
+#alfabeto{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#emoções{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#numeros{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#voo, #relogio, #camera, #bolsa, #chapeu, #escada, #sol{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#porco, #sapo, #leão, #girafa, #esquilo, #hipopo, #jacare, #zebra, #cobra, #dog, #cat{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#azul, #rosa, #vermelho, #amarelo, #verde, #roxo, #laranja, #agua, #preto, #branco, #marrom, #cinza{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+#dentes, #dever, #almoço, #cafe, #janta, #dormir, #banho{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w, #x, #y, #z{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 70px;
+    margin: 25px;
+}
+
+.container {
+    max-height: 90vh;
+    height: auto;
+    justify-content: center;
+    padding: 8%;
+    margin: 10;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    border: 7px;
+}
+
+#ham, #fruta, #bebidas{
+width: 240px;
+height: 190px;
+border: 40px;
+display: inline;
+}
+
+#doce{
+width: 250px;
+height: 145px;
+border: 40px;
+display: inline;
+}
+
+#voltar{
+background-color: rgb(42, 73, 141);;
+position: absolute;
+top: 10px;
+width: 70px;
+height: 35px;
+margin: 0 10px;
+right: 10px;
+border-radius: 5px;
+color: rgb(240, 245, 249);
+}
+
+.item {
+text-align: center;
+}
+
+#lanche{
+background-color: rgb(104, 177, 241);
+margin: 14px;
+padding: 14px;
+width: 100%;
+height: 70px;
+box-sizing: border-box;
+font-size: 40px;
+}
+
+#doces{
+background-color: rgb(104, 177, 241);
+margin: 12px;
+padding: 12px;
+width: 100%;
+height: 70px;
+box-sizing: border-box;
+font-size: 40px;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#ham, #batata, #quente, #pizza, #san, #chu, #ovo, #pipoca, #que{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+#cup, #pirulito, #picole, #chocolate, #sorvete, #algodao, #bala, #cookie, #bolo{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#morango, #laranja, #kiwi, #melancia, #abacaxi, #uva, #cereja, #morango, #pera, #maça{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#suco, #agua, #cha, #cafe, #refrigerante, #milkshake{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#roupas, #calça, #casaco, #regata, #short, #vestido, #saia{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#circulo, #triangulo, #quadrado, #retangulo, #trapezio, #hexagono, #pentagono{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#alegria, #nojo, #raiva, #triste, #medo, #surpreso{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#um, #dois, #tres, #quatro, #cinco, #seis, #sete, #oito, #nove, #zero, #dez, #vinte, #trinta, #quarenta, #cinquenta, #sessenta, #setenta, #oitenta, #noventa, #cem{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+

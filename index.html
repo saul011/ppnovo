@@ -1,0 +1,762 @@
+Aqui está o código HTML unificado que inclui as seções das seis páginas fornecidas. Cada página é representada por uma seção distinta, e a navegação entre essas seções é feita por meio de um menu de navegação.
+
+### Código HTML Unificado:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="style6.css">
+    <title>Unified Page</title>
+    <style>
+        .content-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unified Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('page1')">Página 1</a></li>
+                <li><a href="#" onclick="showSection('page2')">Página 2</a></li>
+                <li><a href="#" onclick="showSection('page3')">Página 3</a></li>
+                <li><a href="#" onclick="showSection('page4')">Página 4</a></li>
+                <li><a href="#" onclick="showSection('page5')">Página 5</a></li>
+                <li><a href="#" onclick="showSection('page6')">Página 6</a></li>
+                <!-- Adicione mais links conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Conteúdo da primeira página -->
+        <section id="page1" class="content-section">
+            <button id="sobre">Sobre nós</button>
+            <a href="file:///C:/Users/Dell/Desktop/ppsaul/index3.html">
+                <input type="button" value="Entrar" id="Entrar">
+            </a>
+            <h1 id="principal">HELPKIDS</h1>
+            <img src="./assets/simbolo.png" alt="" id="foto-simbolo" class="item">
+        </section>
+
+        <!-- Conteúdo da segunda página -->
+        <section id="page2" class="content-section">
+            <img src="./assets/simbolo.png" alt="" id="foto-simbolo" class="item">
+            <img src="./assets/icone.jpeg" alt="" id="icone">
+            <form>
+                <input type="email" placeholder="Email" id="input">
+                <input type="password" placeholder="Senha" id="input">
+                <a href="file:///C:/Users/Dell/Desktop/ppsaul/index4.html">
+                    <input type="button" value="Entrar" id="oi">
+                </a>
+            </form>
+        </section>
+
+        <!-- Conteúdo da terceira página -->
+        <section id="page3" class="content-section">
+            <img src="./assets/simbolo.png" alt="" id="simbolo">
+            <img src="./assets/icone.jpeg" alt="" id="icone">
+            <form>
+                <input type="text" placeholder="Nome" id="input">
+                <input type="email" placeholder="Email" id="input">
+                <input type="date" placeholder="Data de aniversário" id="input">
+                <input type="password" placeholder="Senha" id="input">
+                <input type="password" placeholder="Confirmar senha" id="input">
+            </form>
+            <button id="entrar">Entrar</button>
+            <a href="file:///C:/Users/Dell/Desktop/ppsaul/index2.html">
+                <input type="button" value="Já tem conta? Log in" id="login">
+            </a>
+        </section>
+
+        <!-- Conteúdo da quarta página -->
+        <section id="page4" class="content-section">
+            <img src="./assets/simbolo.png" alt="" id="foto-simbolo" class="item">  
+            <img src="./assets/illustration-de-point-d-interrogation-et-concept-homme-isolement-sur-l-blanche-du-fond-142417187 1.png" id="inter" alt="">
+            <a href="file:///C:/Users/Dell/Desktop/ppsaul/index5.html">
+                <input type="button" value="Criança" id="criança">
+            </a>
+            <a href="#">
+                <input type="button" value="Responsável" id="criança">
+            </a>
+            <a href="#">
+                <input type="button" value="Profissional" id="criança">
+            </a>
+        </section>
+
+        <!-- Conteúdo da quinta página -->
+        <section id="page5" class="content-section">
+            <div class="container">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index6.html"><input type="button" value="OBJETOS" id="objetos"></a></h1>
+                <img src="./assets/Rectangle 13.png" id="bola">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index7.html"><input type="button" value="ANIMAIS" id="animais"></a></h1>
+                <img src="./assets/animal - Copia.jpg" id="animal" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index8.html"><input type="button" value="CORES" id="cores"></a></h1>
+                <img src="./assets/cor.jpg" id="cor" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index9.html"><input type="button" value="ROTINA" id="rotina"></a></h1>
+                <img src="./assets/rotinaa.avif" id="rotinas" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index10.html"><input type="button" value="ALFABETO" id="alfabeto"></a></h1>
+                <img src="./assets/alfa.jpg" id="alfabetos" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index11.html"><input type="button" value="COMIDA" id="alfabeto"></a></h1>
+                <img src="./assets/9bc1aba458492258368807ddee030b26.png" id="comidas" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index16.html"><input type="button" value="ROUPAS" id="alfabeto"></a></h1>
+                <img src="./assets/R.png" id="ROUPAS" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index17.html"><input type="button" value="FORMAS" id="alfabeto"></a></h1>
+                <img src="./assets/formas.jpeg" id="forma" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index18.html"><input type="button" value="EMOÇÕES" id="alfabeto"></a></h1>
+                <img src="./assets/emo.avif" id="emoções" alt="">
+                <h1 class="input"><a href="file:///C:/Users/Dell/Desktop/ppsaul/index19.html"><input type="button" value="NÚMEROS" id="alfabeto"></a></h1>
+                <img src="./assets/OIP.jpeg" id="numero" alt="">
+            </div>
+        </section>
+
+        
+        <section id="page6" class="content-section">
+            <a href="file:///C:/Users/Dell/Desktop/ppsaul/index5.html">
+                <input type="button" value="Voltar" id="voltar">
+            </a>
+            <div class="container">
+                <h1 class="input">TESOURA</h1>
+                <img src="./assets/Rectangle 37.png" id="voo" alt="">
+                <h1 class="input">APONTADOR</h1>
+                <img src="./assets/Rectangle 38.png" id="apontador" alt="">
+                <h1 class="input">RELÓGIO</h1>
+                <img src="./assets/Rectangle 40.png" id="relogio" alt="">
+                <h1 class="input">CÂMERA</h1>
+                <img src="./assets/Capturar.JPG" id="camera" alt="">
+                <h1 class="input">BOLSA</h1>
+                <img src="./assets/bolsa.JPG" id="bolsa" alt="">
+                <h1 class="input">CHAPÉU</h1>
+                <img src="./assets/chapeu.JPG" id="chapeu" alt="">
+                <h1 class="input">ESCADA</h1>
+                <h1 class="input">ÓCULOS DE SOL</h1>
+                <img src="./assets/oculos sol.JPG" id="sol" alt="">
+            </div>
+
+        <section id="page7" class="content-section">
+            <div class="container">
+                <h1 class="input">PORCO</h1>
+                <img src="./assets/porco.png" id="porco" alt=""> 
+                <h1 class="input">SAPO</h1>
+                <img src="./assets/sapo2.jpeg" id="sapo" alt="">
+                <h1 class="input">LEÃO</h1>
+                <img src="./assets/leao.avif" id="leão" alt="">
+                <h1 class="input">GIRAFA</h1>
+                <img src="./assets/girafa.jpeg" id="girafa" alt="">
+                <h1 class="input">ESQUILO</h1>
+                <img src="./assets/esquilo.jpeg" id="esquilo" alt="">
+                <h1 class="input">HIPOPÓTAMO</h1>
+                <img src="./assets/hipopo.jpg" id="hipopo" alt="">
+                <h1 class="input">JACARÉ</h1>
+                <img src="./assets/jacare.jpg" id="jacare" alt="">
+                <h1 class="input">ZEBRA</h1>
+                <img src="./assets/zebra1.avif" id="zebra" alt="">
+                <h1 class="input">COBRA</h1>
+                <img src="./assets/cobra.jpg" id="cobra" alt="">
+                <h1 class="input">CACHORRO</h1>
+                <img src="./assets/dog.avif" id="dog" alt="">
+                <h1 class="input">GATO</h1>
+                <img src="./assets/cat.avif" id="cat" alt="">
+        
+            </div>
+
+            <section id="page8" class="content-section">
+                <div class="container">
+
+                    <h1 class="input">AZUL</h1>
+                    <img src="./assets/azul.JPG" id="azul" alt="">
+                    <h1 class="input">ROSA</h1>
+                    <img src="./assets/rosa.JPG" id="rosa" alt="">
+                    <h1 class="input">VERMELHO</h1>
+                    <img src="./assets/vermelho.JPG" id="vermelho" alt="">
+                    <h1 class="input">VERDE</h1>
+                    <img src="./assets/verde.JPG" id="verde" alt="">
+                    <h1 class="input">AMARELO</h1>
+                    <img src="./assets/amarelo.JPG" id="amarelo" alt="">
+                    <h1 class="input">ROXO</h1>
+                    <img src="./assets/roxo.JPG" id="roxo" alt="">
+                    <h1 class="input">VERDE - ÁGUA</h1>
+                    <img src="./assets/verdeagua.JPG" id="agua" alt="">
+                    <h1 class="input">PRETO</h1>
+                    <img src="./assets/preto.JPG" id="preto" alt="">
+                    <h1 class="input">BRANCO</h1>
+                    <img src="./assets/branco.JPG" id="branco" alt="">
+                    <h1 class="input">CINZA</h1>
+                    <img src="./assets/cinza.JPG" id="cinza" alt="">
+                    <h1 class="input">MARROM</h1>
+                    <img src="./assets/marrom.JPG" id="marrom" alt="">
+                </div>
+         </section>
+
+         <section id="page9" class="content-section">
+            <div class="container">
+
+                <h1 class="input">CAFÉ DA MANHÃ</h1>
+                <img src="./assets/comer.JPG" id="cafe" alt="">
+                <h1 class="input">ESCOVAR OS DENTES</h1>
+                <img src="./assets/dentes.JPG" id="dentes" alt="">
+                <h1 class="input">ALMOÇO 12:00</h1>
+                <img src="./assets/comer.JPG" id="almoço" alt="">
+                <h1 class="input">LIÇÃO DE CASA</h1>
+                <img src="./assets/deveres.JPG" id="dever" alt="">
+                <h1 class="input">JANTAR 20:00</h1>
+                <img src="./assets/comer.JPG" id="janta" alt="">
+                <h1 class="input">TOMAR BANHO</h1>
+                <img src="./assets/banho.JPG" id="banho" alt="">
+                <h1 class="input">DORMIR</h1>
+                <img src="./assets/dormir.JPG" id="dormir" alt="">
+            </div>
+
+            <section id="page10" class="content-section">
+       
+            <div class="container">
+
+                <h1 class="input"></h1>
+                <img src="./assets/a.JPG" id="a" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/b.JPG" id="b" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/c.JPG" id="c" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/d.JPG" id="d" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/e.JPG" id="e" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/f.JPG" id="f" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/g.JPG" id="g" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/h2.JPG" id="h" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/i.JPG" id="i" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/j.JPG" id="j" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/k.JPG" id="k" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/l.JPG" id="l" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/m.JPG" id="m" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/n.JPG" id="n" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/o.JPG" id="o" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/p.JPG" id="p" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/q.JPG" id="q" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/r.JPG" id="r" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/s.JPG" id="s" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/t.JPG" id="t" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/u.JPG" id="u" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/v.JPG" id="v" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/w.JPG" id="w" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/x.JPG" id="x" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/y.JPG" id="y" alt="">
+                <h1 class="input"></h1>
+                <img src="./assets/z.JPG" id="z" alt="">
+            </div>
+
+            <section id="page11" class="content-section">     
+                <div class="container">
+                    <div class="item">
+                        <img src="./assets/ham.jpg" id="ham" alt="">
+                        <h1><a href="file:///C:/Users/Dell/Desktop/ppsaul/index12.html"> <input type="button" value="LANCHES" id="lanche"></a></h1>
+                    </div>
+            
+                    <div class="container">
+                    <div class="item">
+                        <img src="./assets/doce.JPG" id="doce" alt="">
+                        <h1><a href="file:///C:/Users/Dell/Desktop/ppsaul/index13.html"> <input type="button" value="DOCES" id="doces"></a></h1></h1>
+                    </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="item">
+                            <img src="./assets/frutas.JPG" id="fruta" alt="">
+                            <h1><a href="file:///C:/Users/Dell/Desktop/ppsaul/index14.html"> <input type="button" value="FRUTAS" id="doces"></a></h1></h1></h1>
+                        </div>
+                    </div> 
+                    
+                    <div class="container">
+                <div class="item">
+                    <img src="./assets/bebidas.JPG" id="bebidas" alt="">
+                    <h1><a href="file:///C:/Users/Dell/Desktop/ppsaul/index15.html"> <input type="button" value="BEBIDAS" id="doces"></a></h1></h1></h1></h1>
+                </div>
+                    </div>
+                 
+                </div>
+
+        <section id="page12" class="content-section">
+                <div class="container">
+
+                    <div class="container">
+                        <h1 class="input">HAMBÚRHUER</h1>
+                        <img src="./assets/hamburguer.JPG" id="ham" alt="">
+                    </div> 
+                
+                    <div class="container">
+                            <h1 class="input">BATATA FRITA</h1>
+                            <img src="./assets/batata.JPG" id="batata" alt="">  
+                    </div>         
+                
+                            <div class="container">
+                                <h1 class="input">CACHORRO QUENTE</h1>
+                                <img src="./assets/cachorro.JPG" id="quente" alt="">
+                            </div>
+                                
+                                <div class="container">
+                                    <h1 class="input">PIZZA</h1>
+                                    <img src="./assets/pizza.JPG" id="pizza" alt="">  
+                                </div>
+                                
+                                    <div class="container">
+                                        <h1 class="input">SANDUÍCHE</h1>
+                                        <img src="./assets/sanduiche.JPG" id="san" alt="">  
+                                    </div>
+                
+                                        <div class="container">
+                                            <h1 class="input">CHURRASCO</h1>
+                                            <img src="./assets/chu.avif" id="chu" alt=""> 
+                                        </div>
+                
+                                            <div class="container">
+                                                <h1 class="input">QUEIJO</h1>
+                                                <img src="./assets/queijo.JPG" id="que" alt="">   
+                                            </div>
+                
+                                                <div class="container">
+                                                    <h1 class="input">OVO</h1>
+                                                    <img src="./assets/ovo.JPG" id="ovo" alt=""> 
+                                                </div>
+                
+                                                    <div class="container">
+                                                        <h1 class="input">PIPOCA</h1>
+                                                        <img src="./assets/pipoca.JPG" id="pipoca" alt="">  
+                                                    </div>    
+            
+        <section id="page13" class="content-section">
+            <div class="container">
+            
+                <div class="container">
+                    <h1 class="input">CUPCAKE</h1>
+                    <img src="./assets/cup.jpeg" id="cup" alt="">
+                </div>    
+            
+                <div class="container">
+                    <h1 class="input">PIRULITO</h1>
+                    <img src="./assets/pirulito.JPG" id="pirulito" alt="">
+                </div>    
+            
+                <div class="container">
+                    <h1 class="input">SORVETE</h1>
+                    <img src="./assets/sorvete.JPG" id="sorvete" alt="">
+                </div>    
+            
+                <div class="container">
+                    <h1 class="input">PICOLÉ</h1>
+                    <img src="./assets/picole.JPG" id="picole" alt="">
+                </div> 
+                
+                <div class="container">
+                    <h1 class="input">CHOCOLATE</h1>
+                    <img src="./assets/chocolate.JPG" id="chocolate" alt="">
+                </div>    
+            
+                <div class="container">
+                    <h1 class="input">ALGODÃO DOCE</h1>
+                    <img src="./assets/algodao.JPG" id="algodao" alt="">
+                </div> 
+                
+                <div class="container">
+                    <h1 class="input">BALA</h1>
+                    <img src="./assets/bala.JPG" id="bala" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">COOKIE</h1>
+                    <img src="./assets/cookies.JPG" id="cookie" alt="">
+                </div> 
+            
+            
+                <div class="container">
+                    <h1 class="input">BOLO</h1>
+                    <img src="./assets/bolos.JPG" id="bolo" alt="">
+                </div> 
+            
+
+        <section id="page14" class="content-section">
+            <div class="container">
+                <div class="container">
+                    <h1 class="input">BANANA</h1>
+                    <img src="./assets/banana.JPG" id="banana" alt="">
+                </div>  
+                
+                <div class="container">
+                    <h1 class="input">MORANGO</h1>
+                    <img src="./assets/morango.JPG" id="morango" alt="">
+                </div>   
+            
+                <div class="container">
+                    <h1 class="input">MELANCIA</h1>
+                    <img src="./assets/melancia.JPG" id="melancia" alt="">
+                </div>   
+            
+                <div class="container">
+                    <h1 class="input">KIWI</h1>
+                    <img src="./assets/kiwi.JPG" id="kiwi" alt="">
+                </div>   
+            
+                <div class="container">
+                    <h1 class="input">LARANJA</h1>
+                    <img src="./assets/laranja.JPG" id="laranja" alt="">
+                </div> 
+                
+                <div class="container">
+                    <h1 class="input">ABACAXI</h1>
+                    <img src="./assets/abacaxi.JPG" id="abacaxi" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">UVA</h1>
+                    <img src="./assets/UVA.JPG" id="uva" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">ABACAXI</h1>
+                    <img src="./assets/abacaxi.JPG" id="abacaxi" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">CEREJA</h1>
+                    <img src="./assets/cereja.JPG" id="cereja" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">MAÇA</h1>
+                    <img src="./assets/maça.JPG" id="maça" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">MORANGO</h1>
+                    <img src="./assets/morango.JPG" id="morango" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">PERA</h1>
+                    <img src="./assets/pera.JPG" id="pera" alt="">
+                </div> 
+            
+                
+        <section id="page15" class="content-section">
+            <div class="container">
+
+                <div class="container">
+                    <h1 class="input">MILKSHAKE</h1>
+                    <img src="./assets/milkshake.JPG" id="milkshake" alt="">
+                </div>  
+            
+                <div class="container">
+                    <h1 class="input">SUCO</h1>
+                    <img src="./assets/suco.JPG" id="suco" alt="">
+                </div>
+            
+                <div class="container">
+                    <h1 class="input">CAFÉ</h1>
+                    <img src="./assets/cafe.JPG" id="cafe" alt="">
+                </div>
+            
+                <div class="container">
+                    <h1 class="input">ÁGUA</h1>
+                    <img src="./assets/agua.JPG" id="agua" alt="">
+                </div>
+            
+                <div class="container">
+                    <h1 class="input">CHÁ</h1>
+                    <img src="./assets/cha.JPG" id="cha" alt="">
+                </div>
+            
+                <div class="container">
+                    <h1 class="input">REFRIGERANTE</h1>
+                    <img src="./assets/bebidas.JPG" id="refrigerante" alt="">
+                </div>
+            
+        <section id="page16" class="content-section">
+            <div class="container">
+
+                <div class="container">
+                    <h1 class="input">CAMISA</h1>
+                    <img src="./assets/R.png" id="roupas" alt="">
+                </div>  
+            
+                <div class="container">
+                    <h1 class="input">REGATA</h1>
+                    <img src="./assets/regata.JPG" id="regata" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">BERMUDA</h1>
+                    <img src="./assets/short.JPG" id="short" alt="">
+                </div> 
+                
+                <div class="container">
+                    <h1 class="input">CASACO</h1>
+                    <img src="./assets/casaco.JPG" id="casaco" alt="">
+                </div>
+                
+                <div class="container">
+                    <h1 class="input">CALÇA</h1>
+                    <img src="./assets/calça.JPG" id="calça" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">VESTIDO</h1>
+                    <img src="./assets/vestido.JPG" id="vestido" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">SAIA</h1>
+                    <img src="./assets/saia.JPG" id="saia" alt="">
+                </div> 
+
+        <section id="page17" class="content-section">
+            <div class="container">
+
+                <div class="container">
+                    <h1 class="input">RETÂNGULO</h1>
+                    <img src="./assets/retangulo.JPG" id="retangulo" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">PENTÁGONO</h1>
+                    <img src="./assets/pentagono.JPG" id="pentagono" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">HEXÁGONO</h1>
+                    <img src="./assets/hexa.JPG" id="hexagono" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">QUADRADO</h1>
+                    <img src="./assets/quadrado.JPG" id="quadrado" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">CÍRCULO</h1>
+                    <img src="./assets/circulo.JPG" id="circulo" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">TRIÂNGULO</h1>
+                    <img src="./assets/triangulo.JPG" id="triangulo" alt="">
+                </div> 
+            
+                <div class="container">
+                    <h1 class="input">TRAPÉZIO</h1>
+                    <img src="./assets/trapezio.JPG" id="trapezio" alt="">
+                </div> 
+            
+                <section id="page18" class="content-section">
+                    <div class="container">
+
+                        <div class="container">
+                            <h1 class="input">ALEGRIA</h1>
+                            <img src="./assets/alegria.JPG" id="alegria" alt="">
+                        </div> 
+                    
+                        <div class="container">
+                            <h1 class="input">TRSITEZA</h1>
+                            <img src="./assets/tristeza.JPG" id="triste" alt="">
+                        </div>  
+                    
+                        <div class="container">
+                            <h1 class="input">MEDO</h1>
+                            <img src="./assets/medo.JPG" id="medo" alt="">
+                        </div> 
+                    
+                        <div class="container">
+                            <h1 class="input">NOJO</h1>
+                            <img src="./assets/nojo.JPG" id="nojo" alt="">
+                        </div> 
+                    
+                        <div class="container">
+                            <h1 class="input">RAIVA</h1>
+                            <img src="./assets/raiva.JPG" id="raiva" alt="">
+                        </div>
+                    
+                        <div class="container">
+                            <h1 class="input">SURPRESO</h1>
+                            <img src="./assets/surpreso.JPG" id="surpreso" alt="">
+                        </div>
+
+
+        <section id="page19" class="content-section">
+            <div class="container">
+           <div class="container">
+           <h2 class="input">ZERO</h2>
+           <img src="./assets/zero.JPG" id="zero" alt="">
+           </div> 
+
+           <div class="container">
+           <h2 class="input">UM</h2>
+           <img src="./assets/um.JPG" id="um" alt="">
+           </div> 
+
+          <div class="container">
+          <h2 class="input">DOIS</h2>
+          <img src="./assets/dois.JPG" id="dois" alt="">
+          </div>
+    
+          <div class="container">
+          <h2 class="input">TRÊS</h2>
+          <img src="./assets/tres.JPG" id="tres" alt="">
+          </div> 
+ 
+          <div class="container">
+          <h2 class="input">QUATRO</h2>
+          <img src="./assets/quatro.JPG" id="quatro" alt="">
+          </div> 
+
+          <div class="container">
+          <h2 class="input">CINCO</h2>
+          <img src="./assets/cinco.JPG" id="cinco" alt="">
+          </div> 
+
+          <div class="container">
+          <h2 class="input">SEIS</h2>
+          <img src="./assets/seis.JPG" id="seis" alt="">
+          </div> 
+
+          <div class="container">
+          <h2 class="input">SETE</h2>
+          <img src="./assets/sete.JPG" id="sete" alt="">
+          </div> 
+
+          <div class="container">
+          <h2 class="input">OITO</h2>
+          <img src="./assets/oito.JPG" id="oito" alt="">
+          </div> 
+
+          <div class="container">
+          <h2 class="input">NOVE</h2>
+          <img src="./assets/nove.JPG" id="nove" alt="">
+          </div> 
+
+        <h1>DEZENAS</h1>
+
+    <div class="container">
+        <h2 class="input">DEZ</h2>
+        <img src="./assets/dez.JPG" id="dez" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">VINTE</h2>
+        <img src="./assets/vinte.jpg" id="vinte" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">TRINTA</h2>
+        <img src="./assets/trinta.JPG" id="trinta" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">QUARENTA</h2>
+        <img src="./assets/quarenta.JPG" id="quarenta" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">CINQUENTA</h2>
+        <img src="./assets/cinquenta.jpeg" id="cinquenta" alt="">
+    </div>    
+    
+    <div class="container">
+        <h2 class="input">SESSENTA</h2>
+        <img src="./assets/sessenta2.jpeg" id="sessenta" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">SETENTA</h2>
+        <img src="./assets/setenta.jpg" id="setenta" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">OITENTA</h2>
+        <img src="./assets/oitenta.jpeg" id="oitenta" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">NOVENTA</h2>
+        <img src="./assets/noventa.jpg" id="noventa" alt="">
+    </div> 
+
+    <h1>CENTENAS</h1>
+
+    <div class="container">
+        <h2 class="input">CEM</h2>
+        <img src="./assets/cem.jpeg" id="cem" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">DUZENTOS</h2>
+        <img src="./assets/duzentos.webp" id="duzentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">TREZENTOS</h2>
+        <img src="./assets/trezentos.jpg" id="trezentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">QUATROCENTOS</h2>
+        <img src="./assets/quatrocentos.jpeg" id="quatrocentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">QUINHENTOS</h2>
+        <img src="./assets/quinhentos.jpeg" id="quinhentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">SEISCENTOS</h2>
+        <img src="./assets/seiscentos.webp" id="seiscentos" alt="">
+    </div> 
+    
+    <div class="container">
+        <h2 class="input">SETECENTOS</h2>
+        <img src="./assets/setecentos.jpeg" id="setecentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">OITOCENTOS</h2>
+        <img src="./assets/oitocentos.jpeg" id="oitocentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">NOVECENTOS</h2>
+        <img src="./assets/novecentos.jpg" id="novecentos" alt="">
+    </div> 
+
+    <div class="container">
+        <h2 class="input">CEM</h2>
+        <img src="./assets/cem.jpeg" id="cem" alt="">
+    </div> 
+
+                    
