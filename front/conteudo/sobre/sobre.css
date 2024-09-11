@@ -1,0 +1,55 @@
+h1{
+    color: rgb(247, 247, 252);
+}
+
+#principal{
+    color: rgb(240, 243, 246);
+    font-size: 100px;
+    text-align: center;
+
+}
+body{
+    background-color: rgb(97, 162, 227);
+    cursor: pointer;
+}
+
+#simbolo{
+    width: 70px;
+    height: 70px;
+    margin: 0; 
+    display: block;
+    position: absolute; 
+    top: 20px;
+
+}
+
+#p{
+    background-color: white;
+    font-size: 60px;
+    text-align: center;
+}
+#Entrar{
+    background-color: rgb(240, 242, 245);;
+    position: absolute;
+    top: 20px;
+    width: 77px;
+    height: 35px;
+    margin: 0 10px;
+    right: 110px;
+    border-radius: 5px;
+    color: rgb(97, 162, 227);
+}
+
+#voltar {
+    background-color: rgb(241, 241, 242);;
+    position: absolute;
+    top: 20px;
+    width: 77px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(97, 162, 227);
+}
+
+

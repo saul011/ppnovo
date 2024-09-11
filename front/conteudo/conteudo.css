@@ -1,0 +1,144 @@
+input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+#bola, .animal, .alfabeto, .comida{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+
+#cor{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#comida{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px; 
+}
+
+#ROUPAS{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px; 
+}
+
+#formas{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#rotinas, #animal, #alfabetos, #forma, #comidas, #numero, #numeros{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#objetos{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+
+#input{
+    font-size: 30px;
+    width: 160px;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px; 
+    background-color: white;
+    border: none; 
+}
+
+
+#alfabeto{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#emoções{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#numeros{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}

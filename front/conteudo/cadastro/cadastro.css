@@ -1,0 +1,92 @@
+#input {
+    display: block;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(8, 8, 8);;
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: gray;
+}
+
+#entrar {
+    background-color: rgb(23, 35, 197);;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    right: 105px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+    display: block;
+
+}
+
+#cadastro {
+    display: block;
+    width: 212px;
+    height: 45px;
+    background-color: transparent; /* Remove a cor de fundo */
+    color: rgb(8, 8, 8);
+    text-align: center; /* Centraliza o texto */
+    line-height: 45px; /* Alinha verticalmente o texto */
+    margin: 0 auto;
+    text-decoration: underline; /* Adiciona sublinhado ao texto */
+    border: none; /* Remove qualquer borda */
+    box-shadow: none; /* Remove qualquer sombra */
+}
+
+
+#simbolo {
+    width: 70px;
+    height: 70px;
+    margin: 0; 
+    display: block;
+    position: absolute; 
+    top: 20px;
+}
+
+#icone {
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#voltar {
+    background-color: rgb(124, 157, 228);;
+    position: absolute;
+    top: 20px;
+    width: 77px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#inputname, #inputemail, #inputsenha {
+    display: block;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(8, 8, 8);;
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: gray;
+}

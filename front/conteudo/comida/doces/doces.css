@@ -1,0 +1,28 @@
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+#cup, #pirulito, #picole, #chocolate, #sorvete, #algodao, #bala, #cookie, #bolo{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}

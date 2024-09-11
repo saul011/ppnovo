@@ -1,0 +1,66 @@
+.container {
+    max-height: 90vh;
+    height: auto;
+    justify-content: center;
+    padding: 8%;
+    margin: 10;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    border: 7px;
+}
+
+#ham, #fruta, #bebidas{
+width: 240px;
+height: 190px;
+border: 40px;
+display: inline;
+}
+
+#doce{
+width: 250px;
+height: 145px;
+border: 40px;
+display: inline;
+}
+
+#voltar{
+background-color: rgb(42, 73, 141);;
+position: absolute;
+top: 10px;
+width: 70px;
+height: 35px;
+margin: 0 10px;
+right: 10px;
+border-radius: 5px;
+color: rgb(240, 245, 249);
+}
+
+.item {
+text-align: center;
+}
+
+#lanche{
+background-color: rgb(104, 177, 241);
+margin: 14px;
+padding: 14px;
+width: 100%;
+height: 70px;
+box-sizing: border-box;
+font-size: 40px;
+}
+
+#doces{
+background-color: rgb(104, 177, 241);
+margin: 12px;
+padding: 12px;
+width: 100%;
+height: 70px;
+box-sizing: border-box;
+font-size: 40px;
+}

@@ -1,0 +1,29 @@
+.container {
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#voltar{
+    background-color: rgb(42, 73, 141);;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(240, 245, 249);
+}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w, #x, #y, #z{
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 70px;
+    margin: 25px;
+}
