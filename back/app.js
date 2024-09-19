@@ -9,9 +9,9 @@ const port = 3000
 const db = mysql2.createConnection(
   {
     host: 'localhost',
-    user: 'usuario',
-    password: 'senhausuario',
-    database: 'base'
+    user: 'root',
+    password: 'root',
+    database: 'usuario'
   }
 )
 

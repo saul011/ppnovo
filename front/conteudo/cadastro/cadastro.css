@@ -75,7 +75,7 @@
     color: rgb(240, 245, 249);
 }
 
-#inputname, #inputemail, #inputsenha {
+#inputname, #inputemail, #inputsenha, #h1 {
     display: block;
     margin: 0 20px;
     width: 200px;
@@ -89,4 +89,5 @@
     margin-bottom: 30px;
     border-radius: 5px;
     border: gray;
+
 }

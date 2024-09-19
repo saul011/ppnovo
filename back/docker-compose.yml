@@ -4,10 +4,11 @@ services:
     image: mysql:latest
     container_name: my-mysql
     environment:
-      MYSQL_DATABASE: base
-      MYSQL_ROOT_PASSWORD: senha
-      MYSQL_USER: usuario
-      MYSQL_PASSWORD: senhausuario
+      DB_DATABASE: base
+      DB_HOST:localhost
+      DB_ROOT_PASSWORD: root
+      DB_USER: root
+      DB_PASSWORD: root
     ports:
       - '3306:3306'
     volumes:

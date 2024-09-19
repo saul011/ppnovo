@@ -1,144 +1,55 @@
-input{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 70px;
-    text-align: center;
-}
-
-
-#bola, .animal, .alfabeto, .comida{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-
-#cor{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#comida{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px; 
-}
-
-#ROUPAS{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px; 
-}
-
-#formas{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#rotinas, #animal, #alfabetos, #forma, #comidas, #numero, #numeros{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#objetos{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-
-#input{
-    font-size: 30px;
-    width: 160px;
-    height: 80px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px; 
-    background-color: white;
-    border: none; 
-}
-
-
-#alfabeto{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#emoções{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#numeros{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
-    text-align: center; 
-    margin: 0 20px;
-    cursor: pointer;
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-top: 20px;
 }
 
-#voltar{
-    background-color: rgb(42, 73, 141);;
+.item {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#voltar {
+    background-color: rgb(23, 35, 197);; 
     position: absolute;
     top: 20px;
-    width: 70px;
+    width: 77px;
     height: 35px;
     margin: 0 10px;
     right: 20px;
     border-radius: 5px;
-    color: rgb(240, 245, 249);
+    color: rgb(242, 244, 247);
+}
+
+
+#voltar:hover {
+    background-color: #ddd;
 }
