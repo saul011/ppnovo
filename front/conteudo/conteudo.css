@@ -4,24 +4,27 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens sejam distribuídos em várias linhas */
+    justify-content: space-between; /* Distribui os itens igualmente com espaço entre eles */
+    max-width: 1000px; /* Define a largura máxima da área principal */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
+    width: 30%; /* Cada container ocupará 30% da largura, garantindo 3 por linha */
+    margin: 10px 0; /* Espaçamento entre as linhas */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin-top: 20px;
-}
-
-.item {
-    flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Conteúdo dentro do container em coluna */
     align-items: center;
-    margin: 10px;
+    box-sizing: border-box; /* Inclui o padding e a margem na largura total */
+    cursor: pointer;
 }
 
 .item img {
@@ -38,7 +41,7 @@ body {
 }
 
 #voltar {
-    background-color: rgb(23, 35, 197);; 
+    background-color: rgb(23, 35, 197);
     position: absolute;
     top: 20px;
     width: 77px;
@@ -49,7 +52,11 @@ body {
     color: rgb(242, 244, 247);
 }
 
-
 #voltar:hover {
     background-color: #ddd;
+}
+
+.container:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }

@@ -11,7 +11,8 @@ const db = mysql2.createConnection(
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'usuario'
+    database: 'usuario',
+    port: 3306
   }
 )
 
