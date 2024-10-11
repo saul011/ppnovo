@@ -17,7 +17,7 @@
     margin-bottom: 80px;
 }
 
-#input {
+#input, #email, #password {
     display: block;
     margin: 0 20px;
     width: 200px;
@@ -92,4 +92,8 @@
     text-decoration: underline; /* Adiciona sublinhado ao texto */
     border: none; /* Remove qualquer borda */
     box-shadow: none; /* Remove qualquer sombra */
+}
+
+#voltar:hover {
+    background-color: #ddd;
 }

@@ -4,7 +4,7 @@
   "description": "api-ludico",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon back/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "amanda saul",

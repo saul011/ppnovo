@@ -1,127 +1,53 @@
-input{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 70px;
-    text-align: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
-
-.bola, .animal, .alfabeto, .comida{
-    width: 250px;
-    height: 200px;
+.main-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#cor{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#comida{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px; 
-}
-
-#ROUPAS{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px; 
-}
-
-#formas{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#rotinas, #animal, #alfabetos, #comidas{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#objetos, #animais, #cores, #rotina, #alfabeto, #comida, #roupas, #forma, #emoçoes, #numero{
-    font-size: 30px;
-    width: 160px;
-    height: 80px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px; 
-    background-color: white;
-    border: none; 
-}
-
-
-#alfabeto{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#emoções{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
-}
-
-#numeros{
-    width: 250px;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    display: inline-block; 
-    margin-bottom: 80px;
-    margin: 0 10px;
+    flex-wrap: nowrap; /* Força todos os itens a permanecerem em uma única linha horizontal */
+    max-width: 100%;
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
-    text-align: center; 
-    margin: 0 20px;
+    width: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
     cursor: pointer;
-    margin-bottom: 50px;
 }
 
+.item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Suave ao ampliar imagem */
+}
+
+.item h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
 
 #voltar {
-    background-color: rgb(106, 134, 175);
+    background-color: rgb(23, 35, 197);
     position: absolute;
     top: 20px;
     width: 77px;
@@ -129,27 +55,13 @@ input{
     margin: 0 10px;
     right: 20px;
     border-radius: 5px;
-    color: rgb(247, 250, 253);
+    color: rgb(242, 244, 247);
 }
 
-.item {
-    flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+#voltar:hover {
+    background-color: #ddd;
 }
 
-.item h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin-top: 20px;
+.container:hover img {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
 }

@@ -16,14 +16,17 @@
     border-radius: 5px;
     color: rgb(240, 245, 249);
 }
-
-#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w, #x, #y, #z{
+#dentes, #dever, #almoço, #cafe, #janta, #dormir, #banho{
     align-items: center;
     width: 250px;
     height: 200px;
     justify-content: center;
     text-align: center;
     display: inline-block; 
-    margin-bottom: 70px;
-    margin: 25px;
+    margin-bottom: 80px;
+    margin: 0 10px;
+}
+
+#voltar:hover {
+    background-color: #ddd;
 }

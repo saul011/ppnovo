@@ -27,3 +27,7 @@
     border-radius: 5px;
     color: rgb(240, 245, 249);
 }
+
+#voltar:hover {
+    background-color: #ddd;
+}
