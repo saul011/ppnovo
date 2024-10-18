@@ -3,67 +3,99 @@ const mysql2 = require('mysql2');
 const cors = require('cors');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const multer = require('multer');
+const path = require('path');
+
 const app = express();
+const port = 3000;
+
+// Conexão com o banco de dados 'categoria'
+const dbCategoria = mysql2.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'root',
+    database: 'categoria',
+});
+
+// Conexão com o banco de dados 'itens'
+const dbItens = mysql2.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'root',
+    database: 'itens',
+});
+
+// Estabelecendo a conexão com o banco de dados 'categoria'
+dbCategoria.connect((err) => {
+    if (err) {
+        console.error('Erro ao conectar ao banco de dados categoria:', err);
+        return;
+    }
+    console.log('Conectado ao banco de dados categoria.');
+});
+
+// Estabelecendo a conexão com o banco de dados 'itens'
+dbItens.connect((err) => {
+    if (err) {
+        console.error('Erro ao conectar ao banco de dados itens:', err);
+        return;
+    }
+    console.log('Conectado ao banco de dados itens.');
+});
 
 app.use(express.json());
 app.use(cors());
-const port = 3000;
+app.use(express.urlencoded({ extended: true }));
+
+// Configuração do multer para upload de imagem
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/');
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + path.extname(file.originalname));
+    }
+});
+const upload = multer({ storage: storage });
 
 // Configuração do Swagger
 const swaggerOptions = {
-  swaggerDefinition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'API de Tarefas',
-      version: '1.0.0',
-      description: 'API para gerenciar tarefas'
+    swaggerDefinition: {
+        openapi: '3.0.0',
+        info: {
+            title: 'API de Tarefas',
+            version: '1.0.0',
+            description: 'API para gerenciar tarefas'
+        },
+        servers: [
+            {
+                url: `http://localhost:${port}`,
+                description: 'Servidor local'
+            }
+        ]
     },
-    servers: [
-      {
-        url: `http://localhost:${port}`,
-        description: 'Servidor local'
-      }
-    ]
-  },
-  apis: ['./src/server.js'], // Caminho para os arquivos com anotações Swagger
+    apis: ['./src/server.js'], // Caminho para os arquivos com anotações Swagger
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-// Conexão com o banco de dados
-const db = mysql2.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'usuario',
-  port: 3306, // Aqui você provavelmente deve usar a porta do MySQL (geralmente 3306), e não a do servidor
-});
-
-db.connect((err) => {
-  if (err) {
-    console.error('Erro ao conectar ao banco de dados:', err);
-    return;
-  }
-  console.log('Conectado ao banco de dados MySQL.');
-});
-
-// Rota GET
+// Rota GET para verificar se o banco de dados 'perfil' está funcionando
 app.get('/', (req, res) => {
-  const query = 'SELECT * FROM perfil LIMIT 1';
-  db.query(query, (err, result) => {
-    if (err) {
-      console.error('Erro ao executar a query:', err);
-      res.status(500).send('Erro no servidor');
-      return;
-    }
+    const query = 'SELECT * FROM perfil LIMIT 1';
+    dbCategoria.query(query, (err, result) => {
+        if (err) {
+            console.error('Erro ao executar a query:', err);
+            res.status(500).send('Erro no servidor');
+            return;
+        }
 
-    if (result.length > 0) {
-      res.send(JSON.stringify(result[0]));
-    } else {
-      res.send('Nenhum dado encontrado.');
-    }
-  });
+        if (result.length > 0) {
+            res.send(JSON.stringify(result[0]));
+        } else {
+            res.send('Nenhum dado encontrado.');
+        }
+    });
 });
 
 /**
@@ -91,20 +123,30 @@ app.get('/', (req, res) => {
  *         description: Erro no servidor.
  */
 app.post('/cadastro', (req, res) => {
-  const { email, nome, senha } = req.body;
-  const query = 'INSERT INTO perfil (email, nome, senha) VALUES (?, ?, ?)';
-  const values = [email, nome, senha];
+    const { email, nome, senha } = req.body;
+    const query = 'INSERT INTO perfil (email, nome, senha) VALUES (?, ?, ?)';
+    const values = [email, nome, senha];
 
-  db.query(query, values, (err, results) => {
-    if (err) {
-      console.error('Erro ao inserir os dados:', err);
-      return res.status(500).send('Erro ao registrar o usuário');
-    }
-    res.status(201).send('Usuário registrado com sucesso');
-  });
+    dbCategoria.query(query, values, (err, results) => {
+        if (err) {
+            console.error('Erro ao inserir os dados:', err);
+            return res.status(500).send('Erro ao registrar o usuário');
+        }
+        res.status(201).send('Usuário registrado com sucesso');
+    });
 });
+
+// Rota para carregar o formulário
+app.post('/cadastrar-item', (req, res) => {
+    const query = 'SELECT * FROM categoria';
+    dbCategoria.query(query, (err, result) => {
+        if (err) throw err;
+        res.render('formulario', { categorias: result });
+    });
+});
+
 
 // Iniciar o servidor
 app.listen(port, () => {
-  console.log(`Executando na porta ${port}`);
+    console.log(`Executando na porta ${port}`);
 });
