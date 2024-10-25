@@ -7,22 +7,14 @@ const multer = require('multer');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 3009;
 
 // Conexão com o banco de dados 'categoria'
 const dbCategoria = mysql2.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'categoria',
-});
-
-// Conexão com o banco de dados 'itens'
-const dbItens = mysql2.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'itens',
+    database: 'usuario',
 });
 
 // Estabelecendo a conexão com o banco de dados 'categoria'
@@ -31,17 +23,9 @@ dbCategoria.connect((err) => {
         console.error('Erro ao conectar ao banco de dados categoria:', err);
         return;
     }
-    console.log('Conectado ao banco de dados categoria.');
+    console.log('Conectado ao banco de dados.');
 });
 
-// Estabelecendo a conexão com o banco de dados 'itens'
-dbItens.connect((err) => {
-    if (err) {
-        console.error('Erro ao conectar ao banco de dados itens:', err);
-        return;
-    }
-    console.log('Conectado ao banco de dados itens.');
-});
 
 app.use(express.json());
 app.use(cors());
@@ -74,7 +58,7 @@ const swaggerOptions = {
             }
         ]
     },
-    apis: ['./src/server.js'], // Caminho para os arquivos com anotações Swagger
+    apis: ['./back/*.js'], // Caminho para os arquivos com anotações Swagger
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
@@ -103,24 +87,15 @@ app.get('/', (req, res) => {
  * /cadastro:
  *   post:
  *     summary: Cadastra uma nova tarefa
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               email:
- *                 type: string
- *               nome:
- *                 type: string
- *               senha:
- *                 type: string
  *     responses:
  *       201:
- *         description: Sucesso ao cadastrar a tarefa!
- *       500:
- *         description: Erro no servidor.
+ *         description: Sucesso!
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
  */
 app.post('/cadastro', (req, res) => {
     const { email, nome, senha } = req.body;
@@ -137,13 +112,20 @@ app.post('/cadastro', (req, res) => {
 });
 
 // Rota para carregar o formulário
-app.post('/cadastrar-item', (req, res) => {
-    const query = 'SELECT * FROM categoria';
-    dbCategoria.query(query, (err, result) => {
-        if (err) throw err;
-        res.render('formulario', { categorias: result });
+app.post('/cadastrar-item', upload.single('imagem'), (req, res) => {
+    const { nome, categoria_id } = req.body; // Remova 'descricao' e 'preco' se não estiverem no formulário
+    const imagem = req.file ? req.file.filename : null;
+
+    const query = 'INSERT INTO itens (nome, imagem, categoria_id) VALUES (?, ?, ?)';
+    dbCategoria.query(query, [nome, imagem, categoria_id], (err, result) => {
+        if (err) {
+            console.error('Erro ao cadastrar item:', err); // Adicione um log de erro
+            return res.status(500).send('Erro ao cadastrar o item');
+        }
+        res.send('Item cadastrado com sucesso!');
     });
 });
+
 
 
 // Iniciar o servidor

@@ -16,7 +16,7 @@ button.onclick = async function(event) {
   console.log(data)
 
   try {
-    const response = await fetch('http://localhost:3000/cadastro', {
+    const response = await fetch('http://localhost:3009/cadastro', {
       method: "POST",
       headers: { "Content-type": "application/json;charset=UTF-8" },
       body: JSON.stringify(data)
