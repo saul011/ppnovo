@@ -1,6 +1,6 @@
 let button = document.getElementById("entrar");
 
-button.onclick = async function(event) {
+button.onclick = async function (event) {
   event.preventDefault();
 
   let nome = document.getElementById("inputname").value;
@@ -18,11 +18,12 @@ button.onclick = async function(event) {
   try {
     const response = await fetch('http://localhost:3009/cadastro', {
       method: "POST",
-      headers: { "Content-type": "application/json;charset=UTF-8" },
+      headers: { "Content-type": "application/json" },
       body: JSON.stringify(data)
     });
 
     let content = await response.json();
+    
     if (content.success) {
       alert(content.message);
       window.location.href = './login.html'
@@ -30,7 +31,8 @@ button.onclick = async function(event) {
       alert(content.message);
     }
   } catch (error) {
-    // alert('Falha ao conectar com o servidor.');
-    alert('Sucesso, faça o login!');
+    alert('Falha ao conectar com o servidor.');
+    console.log(error);
+
   }
 };

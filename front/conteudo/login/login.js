@@ -31,3 +31,22 @@ button.onclick = async function(event) {
     alert('Erro ao conectar com o servidor.');
   }
 };
+
+const bcrypt = require('bcrypt');
+const db = require('./db'); 
+
+async function validarLogin(email, senha) {
+  return new Promise((resolve, reject) => {
+    db.query('SELECT * FROM perfil WHERE email = ?', [email], async (err, results) => {
+      if (err) return reject(err);
+      if (results.length > 0) {
+        const user = results[0];
+        const senhaValida = await bcrypt.compare(senha, user.senha);
+        if (senhaValida) return resolve(user);
+      }
+      resolve(null);
+    });
+  });
+}
+
+module.exports = { validarLogin };
