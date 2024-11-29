@@ -1,52 +1,22 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    font-size: 70px;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 100vh;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-.main-container{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 20px;
-    max-width: 100%;
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    grid-template-rows: repeat(4, auto); /* Quatro linhas */
+    gap: 20px; /* Espaço entre os itens */
+    max-width: 900px;
     padding: 20px;
     box-sizing: border-box;
-    flex-direction: row;
 }
-
-.container {
-    width: auto;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    cursor: pointer;
-    overflow: auto;
-}
-
-.item img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px; /* Aumenta o espaçamento entre a imagem e o texto */
-}
-
-.item h1 {
-    font-size: 24px; /* Aumenta a fonte do título */
-    margin-bottom: 20px; /* Aumenta o espaçamento abaixo do título */
-    text-align: center;
-    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
-}
-
 
 #voltar {
     background-color: rgb(23, 35, 197);
@@ -54,18 +24,51 @@ body{
     top: 20px;
     width: 77px;
     height: 35px;
-    margin: 0 10px;
     right: 20px;
     border-radius: 5px;
     color: rgb(242, 244, 247);
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #voltar:hover {
     background-color: #ddd;
+    color: black;
 }
 
-.container:hover img {
-    transform: scale(1.2);
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
+.img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}

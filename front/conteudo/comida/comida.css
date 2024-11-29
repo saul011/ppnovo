@@ -1,70 +1,74 @@
-.container {
-    max-height: 90vh;
-    height: auto;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
     justify-content: center;
-    padding: 8%;
-    margin: 10;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    max-height: 50vh;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 600px;
-    margin: auto;
-    border: 7px;
+    grid-template-columns: repeat(2, 1fr); /* Três colunas */
+    grid-template-rows: repeat(4, auto); /* Quatro linhas */
+    gap: 20px; /* Espaço entre os itens */
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#ham, #fruta, #bebidas{
-width: 240px;
-height: 190px;
-border: 40px;
-display: inline;
-}
-
-#doce{
-width: 250px;
-height: 145px;
-border: 40px;
-display: inline;
-}
-
-#voltar{
-background-color: rgb(42, 73, 141);;
-position: absolute;
-top: 10px;
-width: 70px;
-height: 35px;
-margin: 0 10px;
-right: 10px;
-border-radius: 5px;
-color: rgb(240, 245, 249);
-}
-
-.item {
-text-align: center;
-}
-
-#lanche{
-background-color: rgb(104, 177, 241);
-margin: 14px;
-padding: 14px;
-width: 100%;
-height: 70px;
-box-sizing: border-box;
-font-size: 40px;
-}
-
-#doces{
-background-color: rgb(104, 177, 241);
-margin: 12px;
-padding: 12px;
-width: 100%;
-height: 70px;
-box-sizing: border-box;
-font-size: 40px;
+#voltar {
+    background-color: rgb(23, 35, 197);
+    position: absolute;
+    top: 20px;
+    width: 77px;
+    height: 35px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(242, 244, 247);
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #voltar:hover {
     background-color: #ddd;
+    color: black;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
 }

@@ -1,50 +1,58 @@
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1000px;
-    padding: 20px;
+    display: grid; /* Define layout como grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+    grid-template-rows: auto; /* Linhas ajustadas automaticamente ao conteúdo */
+    gap: 20px; /* Espaço entre as células da grade */
+    max-width: 1200px; /* Largura máxima do grid */
+    padding: 20px; /* Espaçamento interno */
     box-sizing: border-box;
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+    justify-items: center; /* Centraliza os itens dentro de cada célula */
 }
 
 .container {
-    width: 30%;
-    margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
+    text-align: center;
     cursor: pointer;
+}
+
+.container img {
+    width: 130px;  /* Reduz a largura da imagem */
+    height: 135px; /* Reduz a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem ao tamanho sem distorção */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s ease; /* Transição suave para hover */
+}
+
+.container:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #voltar {
     background-color: rgb(42, 73, 141);
-    position: absolute;
+    position: fixed; /* Mantém fixo no canto superior direito */
     top: 20px;
+    right: 20px;
     width: 70px;
     height: 35px;
-    margin: 0 10px;
-    right: 20px;
-    border-radius: 5px;
     color: rgb(240, 245, 249);
-}
-
-#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w, #x, #y, #z {
-    align-items: center;
-    width: 250px;
-    height: 200px;
-    justify-content: center;
     text-align: center;
-    display: inline-block; 
-    margin-bottom: 70px;
-    margin: 25px;
+    line-height: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.container img {
-    transition: transform 0.3s ease; /* Transição suave */
+#voltar:hover {
+    background-color: rgb(30, 60, 120); /* Alteração de cor no hover */
+    color: white;
 }
-
-.container:hover img {
-    transform: scale(1.1); /* Aumenta a imagem um pouco */
-}
-

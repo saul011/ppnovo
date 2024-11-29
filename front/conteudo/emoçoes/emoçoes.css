@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    grid-template-rows: repeat(4, auto); /* Quatro linhas */
+    gap: 20px; /* Espaço entre os itens */
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#voltar {
+    background-color: rgb(23, 35, 197);
+    position: absolute;
+    top: 20px;
+    width: 77px;
+    height: 35px;
+    right: 20px;
+    border-radius: 5px;
+    color: rgb(242, 244, 247);
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#voltar:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#vergonha{
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 210px;
+    height: auto;
+}

@@ -23,7 +23,7 @@ button.onclick = async function(event) {
     let content = await response.json();
     if (content.success) {
       alert(content.message);
-      window.location.href = './conteudo.html'; // Redireciona após sucesso no login
+      window.location.href = '../conteudo.html'; // Redireciona após sucesso no login
     } else {
       alert(content.message);
     }

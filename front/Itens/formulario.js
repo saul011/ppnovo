@@ -1,23 +1,13 @@
-let button = document.getElementById("cadastro");
+let button = document.getElementById("enviar");
 
-button.onclick = async function(event) {
-  event.preventDefault();
-
-  let nome = document.getElementById("nome").value;
-  let categoria_id = document.getElementById("categoria_id").value;
-
-  let data = {
-    nome,
-    categoria_id
-  };
-
-  console.log(data);
-
+button.onclick = async function() {
   try {
-    const response = await fetch('http://localhost:3009/cadastrar-item', { // Aqui deve ser o endpoint correto para login
+    let form = document.getElementById("formulario");
+    let dadosForm = new FormData(form);
+    
+    const response = await fetch('http://localhost:3009/cadastrar-item', {
       method: "POST",
-      headers: { "Content-type": "application/json;charset=UTF-8" },
-      body: JSON.stringify(data)
+      body: dadosForm
     });
 
     let content = await response.json();

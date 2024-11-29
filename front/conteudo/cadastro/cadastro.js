@@ -13,6 +13,11 @@ button.onclick = async function (event) {
     senha
   };
 
+  if (!nome || !email || !senha) {
+    alert('Preencha todos os campos!');
+    return;
+}
+
   console.log(data)
 
   try {
@@ -26,7 +31,7 @@ button.onclick = async function (event) {
     
     if (content.success) {
       alert(content.message);
-      window.location.href = './login.html'
+      window.location.href = '../login/login.html'
     } else {
       alert(content.message);
     }
